@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Application</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index_style.css" />
+  </head>
+  <body>
+    <div class="login-content container w-50 text-center mt-5 p-5">
+      <h1>Smart Login System</h1>
+
+      <input
+        type="text"
+        id="userName"
+        class="form-control my-4"
+        placeholder="Enter Your Name"
+      />
+
+      <input
+        type="email"
+        id="userEmail"
+        class="form-control my-4"
+        placeholder="Enter Your Email"
+      />
+
+      <input
+        type="password"
+        id="userPassword"
+        class="form-control"
+        placeholder="Enter Your password"
+      />
+
+      <p class="fillingMsg text-danger mt-3 d-none">Please Fill all Inputs</p>
+      <p class="correctMsg text-danger mt-3 d-none">Please Enter Valid Data</p>
+      <p class="successMsg text-success mt-3 d-none">Sign Up Success</p>
+      <p class="repeatMsg text-danger mt-3 d-none">
+        These Data are used before
+      </p>
+
+      <button id="signBtn" class="btn btn-outline-info text-center w-100 my-4">
+        Sign Up
+      </button>
+      <p class="text-white">
+        Don’t have an account?
+        <a class="text-decoration-none text-white" href="/index.html"
+          >Sign In</a
+        >
+      </p>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="/js/index_signup.js " defer></script>
+  </body>
+</html>
